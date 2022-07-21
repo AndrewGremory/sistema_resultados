@@ -1,10 +1,10 @@
 <?php
 class Conexion{
     public static function Conectar(){
-        define('servidor','localhost');
-        define('nombre_bd','login');
-        define('usuario','root');
-        define('password','');
+        define('servidor','bpcfcrfah5nwhfqhcnxk-mysql.services.clever-cloud.com');
+        define('nombre_bd','bpcfcrfah5nwhfqhcnxk');
+        define('usuario','u0xsso8pckydedin');
+        define('password','4XyI7CrQq3dBjlJhD5CI');
         
 
         
