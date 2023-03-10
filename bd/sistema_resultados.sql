@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 21-07-2022 a las 07:42:59
+-- Tiempo de generación: 10-03-2023 a las 03:19:53
 -- Versión del servidor: 8.0.26
 -- Versión de PHP: 8.0.6
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `login`
+-- Base de datos: `sistema_resultados`
 --
 
 -- --------------------------------------------------------
@@ -193,13 +193,6 @@ CREATE TABLE `fichas` (
   `lider_ficha` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
---
--- Volcado de datos para la tabla `fichas`
---
-
-INSERT INTO `fichas` (`id_ficha`, `tipo_programa`, `nombre_programa`, `lider_ficha`) VALUES
-(2068060, 'Tecnólogo', 1, 2);
-
 -- --------------------------------------------------------
 
 --
@@ -237,78 +230,6 @@ CREATE TABLE `rap` (
   `estado` enum('Evaluado','Pendiente','En ejecución','') DEFAULT 'Pendiente',
   `observacion` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT '-'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
---
--- Volcado de datos para la tabla `rap`
---
-
-INSERT INTO `rap` (`id`, `ficha_id`, `fase_id`, `act_id`, `rcp_id`, `fecha_inicio`, `fecha_fin`, `estado`, `observacion`) VALUES
-(286, 2068060, NULL, NULL, 1, NULL, NULL, 'Pendiente', '-'),
-(287, 2068060, NULL, NULL, 2, NULL, NULL, 'Pendiente', '-'),
-(288, 2068060, NULL, NULL, 3, NULL, NULL, 'Pendiente', '-'),
-(289, 2068060, NULL, NULL, 4, NULL, NULL, 'Pendiente', '-'),
-(290, 2068060, NULL, NULL, 5, NULL, NULL, 'Pendiente', '-'),
-(291, 2068060, NULL, NULL, 6, NULL, NULL, 'Pendiente', '-'),
-(292, 2068060, NULL, NULL, 7, NULL, NULL, 'Pendiente', '-'),
-(293, 2068060, NULL, NULL, 8, NULL, NULL, 'Pendiente', '-'),
-(294, 2068060, NULL, NULL, 9, NULL, NULL, 'Pendiente', '-'),
-(295, 2068060, NULL, NULL, 10, NULL, NULL, 'Pendiente', '-'),
-(296, 2068060, NULL, NULL, 11, NULL, NULL, 'Pendiente', '-'),
-(297, 2068060, NULL, NULL, 12, NULL, NULL, 'Pendiente', '-'),
-(298, 2068060, NULL, NULL, 13, NULL, NULL, 'Pendiente', '-'),
-(299, 2068060, NULL, NULL, 14, NULL, NULL, 'Pendiente', '-'),
-(300, 2068060, NULL, NULL, 15, NULL, NULL, 'Pendiente', '-'),
-(301, 2068060, NULL, NULL, 16, NULL, NULL, 'Pendiente', '-'),
-(302, 2068060, NULL, NULL, 17, NULL, NULL, 'Pendiente', '-'),
-(303, 2068060, NULL, NULL, 18, NULL, NULL, 'Pendiente', '-'),
-(304, 2068060, NULL, NULL, 19, NULL, NULL, 'Pendiente', '-'),
-(305, 2068060, NULL, NULL, 20, NULL, NULL, 'Pendiente', '-'),
-(306, 2068060, NULL, NULL, 21, NULL, NULL, 'Pendiente', '-'),
-(307, 2068060, NULL, NULL, 22, NULL, NULL, 'Pendiente', '-'),
-(308, 2068060, NULL, NULL, 23, NULL, NULL, 'Pendiente', '-'),
-(309, 2068060, NULL, NULL, 24, NULL, NULL, 'Pendiente', '-'),
-(310, 2068060, NULL, NULL, 25, NULL, NULL, 'Pendiente', '-'),
-(311, 2068060, NULL, NULL, 26, NULL, NULL, 'Pendiente', '-'),
-(312, 2068060, NULL, NULL, 27, NULL, NULL, 'Pendiente', '-'),
-(313, 2068060, NULL, NULL, 28, NULL, NULL, 'Pendiente', '-'),
-(314, 2068060, NULL, NULL, 29, NULL, NULL, 'Pendiente', '-'),
-(315, 2068060, NULL, NULL, 30, NULL, NULL, 'Pendiente', '-'),
-(316, 2068060, NULL, NULL, 31, NULL, NULL, 'Pendiente', '-'),
-(317, 2068060, NULL, NULL, 32, NULL, NULL, 'Pendiente', '-'),
-(318, 2068060, NULL, NULL, 33, NULL, NULL, 'Pendiente', '-'),
-(319, 2068060, NULL, NULL, 34, NULL, NULL, 'Pendiente', '-'),
-(320, 2068060, NULL, NULL, 35, NULL, NULL, 'Pendiente', '-'),
-(321, 2068060, NULL, NULL, 36, NULL, NULL, 'Pendiente', '-'),
-(322, 2068060, NULL, NULL, 37, NULL, NULL, 'Pendiente', '-'),
-(323, 2068060, NULL, NULL, 38, NULL, NULL, 'Pendiente', '-'),
-(324, 2068060, NULL, NULL, 39, NULL, NULL, 'Pendiente', '-'),
-(325, 2068060, NULL, NULL, 40, NULL, NULL, 'Pendiente', '-'),
-(326, 2068060, NULL, NULL, 41, NULL, NULL, 'Pendiente', '-'),
-(327, 2068060, NULL, NULL, 42, NULL, NULL, 'Pendiente', '-'),
-(328, 2068060, NULL, NULL, 43, NULL, NULL, 'Pendiente', '-'),
-(329, 2068060, NULL, NULL, 44, NULL, NULL, 'Pendiente', '-'),
-(330, 2068060, NULL, NULL, 45, NULL, NULL, 'Pendiente', '-'),
-(331, 2068060, NULL, NULL, 46, NULL, NULL, 'Pendiente', '-'),
-(332, 2068060, NULL, NULL, 47, NULL, NULL, 'Pendiente', '-'),
-(333, 2068060, NULL, NULL, 48, NULL, NULL, 'Pendiente', '-'),
-(334, 2068060, NULL, NULL, 49, NULL, NULL, 'Pendiente', '-'),
-(335, 2068060, NULL, NULL, 50, NULL, NULL, 'Pendiente', '-'),
-(336, 2068060, NULL, NULL, 51, NULL, NULL, 'Pendiente', '-'),
-(337, 2068060, NULL, NULL, 52, '2022-07-20', '2022-07-20', 'Evaluado', '-'),
-(338, 2068060, NULL, NULL, 53, NULL, NULL, 'Pendiente', '-'),
-(339, 2068060, NULL, NULL, 54, NULL, NULL, 'Pendiente', '-'),
-(340, 2068060, NULL, NULL, 55, NULL, NULL, 'Pendiente', '-'),
-(341, 2068060, NULL, NULL, 56, NULL, NULL, 'Pendiente', '-'),
-(342, 2068060, NULL, NULL, 57, NULL, NULL, 'Pendiente', '-'),
-(343, 2068060, NULL, NULL, 58, NULL, NULL, 'Pendiente', '-'),
-(344, 2068060, NULL, NULL, 59, NULL, NULL, 'Pendiente', '-'),
-(345, 2068060, NULL, NULL, 60, NULL, NULL, 'Pendiente', '-'),
-(346, 2068060, NULL, NULL, 61, NULL, NULL, 'Pendiente', '-'),
-(347, 2068060, NULL, NULL, 62, NULL, NULL, 'Pendiente', '-'),
-(348, 2068060, NULL, NULL, 63, NULL, NULL, 'Pendiente', '-'),
-(349, 2068060, NULL, NULL, 64, NULL, NULL, 'Pendiente', '-'),
-(350, 2068060, NULL, NULL, 65, NULL, NULL, 'Pendiente', '-'),
-(351, 2068060, NULL, NULL, 66, NULL, NULL, 'Pendiente', '-');
 
 -- --------------------------------------------------------
 
@@ -686,7 +607,7 @@ ALTER TABLE `programa`
 -- AUTO_INCREMENT de la tabla `rap`
 --
 ALTER TABLE `rap`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=413;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=571;
 
 --
 -- AUTO_INCREMENT de la tabla `regional`
