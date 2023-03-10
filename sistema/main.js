@@ -185,7 +185,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
     
-    var id_ficha, opcion, total;
+    var id_ficha, opcion;
     opcion = 8;
 
     if(rol=='administrador'){

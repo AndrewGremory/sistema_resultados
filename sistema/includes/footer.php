@@ -4,7 +4,7 @@
   <div class="footer__block block no-margin-bottom">
     <div class="container-fluid text-center">
       <!-- Please do not remove the backlink to us unless you support us at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)-->
-      <p class="no-margin-bottom"><?php echo fechaColombia(); ?> &copy; Sistema de gestion de resultados <a href="https://sena.com">Sena Cbc</a>.</p>
+      <p class="no-margin-bottom"><?php echo fechaColombia(); ?> &copy; Sistema de gestion de resultados <a href="https://oferta.senasofiaplus.edu.co/">Sena Cbc</a>.</p>
     </div>
   </div>
 </footer>
